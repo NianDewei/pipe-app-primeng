@@ -3,14 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-uncommon',
   templateUrl: './uncommon.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class UncommonComponent implements OnInit {
+  name: string = 'Rolando';
+  gender: string = 'M';
 
-  constructor() { }
+  inviteMap = {
+    M: 'Mr',
+    F: 'Mrs',
+  };
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }

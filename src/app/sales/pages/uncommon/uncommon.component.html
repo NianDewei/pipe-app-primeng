@@ -7,15 +7,14 @@
   <div class="col-12 lg:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
       <p>
-        Content
+        Hello {{ gender | i18nSelect: inviteMap }}. {{ name }}, it is a pleasure
+        to invite you.
       </p>
     </p-fieldset>
   </div>
   <div class="col-12 lg:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-      <p>
-        Content
-      </p>
+      <p>Content</p>
     </p-fieldset>
   </div>
 </div>
