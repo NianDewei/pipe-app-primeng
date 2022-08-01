@@ -40,6 +40,14 @@
         <li>Date | date:'full'</li>
         <li>Date | date:'MMMM dd, yyyy h:m:s aaa'</li>
       </ul>
+
+      <hr />
+
+      <ul>
+        <li>date | date: "long":"GMT-6"</li>
+        <li>date | date: "long":"GMT-7"</li>
+        <li>date | date: "long":"GMT+2":'fr'</li>
+      </ul>
     </p-card>
   </div>
 
@@ -53,6 +61,14 @@
         <li>{{ date | date: "long" }}</li>
         <li>{{ date | date: "full" }}</li>
         <li>{{ date | date: "MMMM dd, yyyy h:m:s aaa" }}</li>
+      </ul>
+
+      <hr />
+
+      <ul>
+        <li>{{ date | date: "long":"GMT-6" }}</li>
+        <li>{{ date | date: "long":"GMT-7" }}</li>
+        <li>{{ date | date: "long":"GMT+2":"fr" }}</li>
       </ul>
     </p-card>
   </div>
