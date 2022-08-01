@@ -3,14 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-basic',
   templateUrl: './basic.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class BasicComponent implements OnInit {
 
-  constructor() { }
+  nameLower: string = 'rolando';
+  nameUpper: string = 'ROLANDO';
+  nameComplete: string = 'roLanDo oC';
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }
