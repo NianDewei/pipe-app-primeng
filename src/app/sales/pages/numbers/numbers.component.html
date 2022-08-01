@@ -4,9 +4,21 @@
 </div>
 
 <div class="grid">
-  <div class="col-4">
+  <div class="col-12 sm:col-6 lg:col-4">
     <p-card header="Net sales" subheader="of the current year">
-      <span>S/.</span> {{ netSales + 1000000| number:'1.2-2' }}
+      <span>S/.</span> {{ netSales + 1000000 | number: "1.2-2" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 sm:col-6 lg:col-4">
+    <p-card header="Gross sales" subheader="of the current year">
+      {{ netSales + 1000000 | currency: "PEN":"symbol-narrow":"1.4-4" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 sm:col-12 lg:col-4">
+    <p-card header="Percentage gains" subheader="of the current year">
+      {{ percentage | percent:'1.2-2':'es-PE'}}
     </p-card>
   </div>
 </div>
