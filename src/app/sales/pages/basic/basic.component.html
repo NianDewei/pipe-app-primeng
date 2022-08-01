@@ -1,26 +1,59 @@
 <div class="text-loyout">
-  <h1>Pipes basic</h1>
-  <p>Pipes include in Angular</p>
+  <p class="text-3xl font-semibold">Pipes basic</p>
+  <p>Pipes included in Angular</p>
 </div>
 
 <div class="grid">
-
   <div class="col-4">
     <p-card header="Uppercase" [subheader]="nameLower">
-      {{nameLower | uppercase}}
+      {{ nameLower | uppercase }}
     </p-card>
   </div>
 
   <div class="col-4">
     <p-card header="LowerCase" [subheader]="nameUpper">
-      {{nameUpper | lowercase}}
+      {{ nameUpper | lowercase }}
     </p-card>
   </div>
 
-   <div class="col-4">
+  <div class="col-4">
     <p-card header="Titlecase" [subheader]="nameComplete">
-      {{nameComplete | titlecase}}
+      {{ nameComplete | titlecase }}
+    </p-card>
+  </div>
+</div>
+
+<div class="text-loyout">
+  <p class="text-3xl font-semibold">Date | Pipe</p>
+  <p>Pipes to display dates</p>
+</div>
+
+<div class="grid">
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li>Date</li>
+        <li>Date | date</li>
+        <li>Date | date:'short'</li>
+        <li>Date | date:'medium'</li>
+        <li>Date | date:'long'</li>
+        <li>Date | date:'full'</li>
+        <li>Date | date:'MMMM dd, yyyy h:m:s aaa'</li>
+      </ul>
     </p-card>
   </div>
 
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date: "short" }}</li>
+        <li>{{ date | date: "medium" }}</li>
+        <li>{{ date | date: "long" }}</li>
+        <li>{{ date | date: "full" }}</li>
+        <li>{{ date | date: "MMMM dd, yyyy h:m:s aaa" }}</li>
+      </ul>
+    </p-card>
+  </div>
 </div>
