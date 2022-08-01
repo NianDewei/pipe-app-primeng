@@ -10,11 +10,27 @@
         Hello {{ gender | i18nSelect: inviteMap }}. {{ name }}, it is a pleasure
         to invite you.
       </p>
+      <button
+        (click)="changeName()"
+        pButton
+        pRipple
+        type="button"
+        label="Change Name"
+        class="p-button-raised p-button-text p-button-sm p-button-success"
+      ></button>
     </p-fieldset>
   </div>
   <div class="col-12 lg:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-      <p>Content</p>
+      <p>We currently {{ clients.length | i18nPlural: clientsMap }}</p>
+      <button
+        (click)="removeClient()"
+        pButton
+        pRipple
+        type="button"
+        label="Remove Client"
+        class="p-button-raised p-button-text p-button-sm p-button-danger"
+      ></button>
     </p-fieldset>
   </div>
 </div>
