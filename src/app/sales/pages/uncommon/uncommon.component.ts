@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon',
@@ -30,6 +31,23 @@ export class UncommonComponent implements OnInit {
     name: 'Rolando',
     email: 'example@gmail.com',
   };
+
+  // json |  Pipe
+  heroes = [
+    {
+      name: 'Superman',
+      flying: true,
+    },
+  ];
+
+  //Async |  Pipe
+  myObservable = interval(1000);
+
+  myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Here you have the aswer.');
+    }, 3000);
+  });
 
   constructor() {}
 
