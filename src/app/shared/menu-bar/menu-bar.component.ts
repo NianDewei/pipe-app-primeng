@@ -18,9 +18,14 @@ export class MenuBarComponent implements OnInit {
         icon: 'pi pi-fw pi-desktop',
         items: [
           {
+            label: 'Documentation',
+            icon: 'pi pi-fw pi-book',
+            url: 'https://angular.io/api?type=pipe',
+          },
+          {
             label: 'Text and Date',
             icon: 'pi pi-fw pi-align-left',
-            routerLink:'/' ,
+            routerLink: '/',
           },
           {
             label: 'Numbers',
@@ -35,9 +40,9 @@ export class MenuBarComponent implements OnInit {
         ],
       },
       {
-        label:'Custom Pipes',
+        label: 'Custom Pipes',
         icon: 'pi pi-fw pi-cog',
-      }
+      },
     ];
   }
 }

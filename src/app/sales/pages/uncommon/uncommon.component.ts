@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [],
 })
 export class UncommonComponent implements OnInit {
-  // i18nSelect
+  // i18nSelect |  Pipe
   name: string = 'Rolando';
   gender: string = 'M';
 
@@ -15,7 +15,7 @@ export class UncommonComponent implements OnInit {
     F: 'Mrs',
   };
 
-  // i18nPlural
+  // i18nPlural |  Pipe
   clients: string[] = ['Pedro', 'Juan', 'Stall', 'Queen'];
 
   clientsMap: { [k: string]: string } = {
@@ -23,6 +23,12 @@ export class UncommonComponent implements OnInit {
     '=1': 'have a client waiting.',
     other: 'have # clients waiting.',
     // other: 'have # clients waiting.',
+  };
+
+  //KeyValue |  Pipe
+  person: { [k: string]: string } = {
+    name: 'Rolando',
+    email: 'example@gmail.com',
   };
 
   constructor() {}
