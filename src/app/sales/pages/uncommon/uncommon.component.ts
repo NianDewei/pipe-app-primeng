@@ -49,6 +49,8 @@ export class UncommonComponent implements OnInit {
     }, 3000);
   });
 
+
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -62,4 +64,6 @@ export class UncommonComponent implements OnInit {
   removeClient() {
     this.clients.splice(0, 1);
   }
+
+
 }

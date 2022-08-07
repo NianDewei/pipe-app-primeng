@@ -42,6 +42,7 @@ export class MenuBarComponent implements OnInit {
       {
         label: 'Custom Pipes',
         icon: 'pi pi-fw pi-cog',
+        routerLink: 'organize',
       },
     ];
   }
